@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDom from "react-dom/client";
 
 function App (props) {
-    return  <h1> Muray Thau </h1>
+    return  <h1> Muray Thau Information  </h1>
 }
 
 
