@@ -1,3 +1,6 @@
+import { useState } from "react"
+
+import Background from './components/background/bcg';
 
 
 const App = () => {
@@ -5,11 +8,16 @@ const App = () => {
   let heroData = [
     {text1: "Dive into", text2: "what you love"},
      {text1: "Indulge", text2: "your passions"},
-      {text1: "give in to ", text2: "your passions and and ambition carry you"}
+      {text1: "give in to ", text2: "your passions and and ambition carry you"},
   ]
+
+  const [heroCount, setHeroCount] = useState(2);
+
+  const [playStatus,setPlayStatus] = useState(false);
+
   return (
     <div>
-      <h1>Olaluwatosin Adojedi</h1>
+      <Background playStatus = {playStatus} heroCount = {heroCount}/>
     </div>
   )
 }
